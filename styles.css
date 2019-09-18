@@ -1,64 +1,71 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Mono|Satisfy&display=swap');
-
-.bar {
+.blocks {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 40px;
+    flex-direction: column;
+}
+
+.background {
     width: 100%;
-    height: 100px;
-    background-color: black;
-    z-index: -1;
 }
 
-logo {
-    font-size: 70px;
-    background-color: black;
-    color: white;
-    display: inline-block;
-    padding: 5px 10px;
-    width: 80px;
-    border-color: white;
-    margin: 20px 20px;
-    z-index: 1
+body {
+    margin: 0;
 }
 
-
-h2 {
-    font-family: 'Satisfy', cursive;
-    font-size: 60px;
-}
-
-h3 {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 60px;
+nav {
+    width: 100vw;
+    background-color: #D6EFFF;
 }
 
 ul {
-    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 3vh;
+    padding: 2vw;
 }
-ul li {
-    display: inline-block;
-    height: 30px;
+
+li {
+    list-style-type: none;
+    font-size: 3vh;
 }
-.small {
-    background-color: red;
-    text-align: center;
-    display: block;
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
 }
-.large {
-    background-color: blue;
-    color: white;
-    text-align: right;
+
+a:hover {
+    background-color: #C6E9FF;
+}
+
+button {
     display: none;
 }
 
-@media screen and (min-width: 960px) {
-    .small {
-        display: none;
+@media screen and (max-width: 640px) {
+    ul {
+        flex-direction: column;
     }
-    .large {
+
+    ul {
+        margin: 0;
+    }
+
+    a {
         display: block;
     }
+
+    button {
+        display: block;
+        padding: 2vw;
+        font-size: 3vh;
+        background-color: #AFE0FF;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        align-self: flex-start;
+    }
 }
+
