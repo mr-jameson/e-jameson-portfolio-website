@@ -1,3 +1,7 @@
+#name {
+    color: red;
+}
+
 .blocks {
     display: flex;
     flex-direction: column;
@@ -5,18 +9,24 @@
 
 .background {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-image: url("images/siera.jpg");
+    align-items: flex-start;
+    /* background-image: url("images/siera.jpg"); */
+    background-color: white;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
+.footer {
+    background-color: black;
+}
+
 div h1 {
-    background-color: grey;
-    margin: 10px 10px;
+    /* background: rgba(168, 136, 136, 0.4); */
+    margin: 1vw 20vw;
 }
 
 body {
