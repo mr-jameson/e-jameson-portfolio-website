@@ -7,7 +7,7 @@ $(document).ready(function(){
       }else{
         $("button").text("☰");
       }
-      
+      console.log("THIS IS WORKING");
       $("li").toggle("slow");
     });  
 });
