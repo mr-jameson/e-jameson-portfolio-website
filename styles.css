@@ -1,197 +1,262 @@
-#name {
-    color: red;
+@import url('https://fonts.googleapis.com/css?family=Lora|Roboto&display=swap');
+
+body {
+    overflow-x: hidden;
 }
 
-@media screen and (max-width: 640px) {
-    .blocks {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        /* background-image: url("images/siera.jpg"); */
-        background-color: white;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-    }
-
-    .text img {
-        width: 40vw;
-        margin: 15vw;
-        border-radius: 50%;
-
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        background-color: black;
-        height: 16vh;
-        width: 100vw;
-    }
-
-    .footer img {
-        width: 5vw;
-        margin: 1vw;
-        border-radius: 50%;
-        border: 0.4vw solid white;
-    }
-
-    div h1 {
-        /* background: rgba(168, 136, 136, 0.4); */
-        font-size: 6vw;
-        margin: 1vw 15vw;
-    }
-
-    div h2 {
-        font-size: 4vw;
-        margin: 1vw 15vw;
-        color: blue;
-    }
-
-    nav {
-        width: 100vw;
-        background-color: #000;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        font-size: 3vh;
-        padding: 2vw;
-    }
-
-    li {
-        list-style-type: none;
-    }
-
-    a {
-        display: flex;
-        text-decoration: none;
-        color: white;
-        padding: 2vw;
-    }
-
-    a:hover {
-        background-color: blue;
-    }
-
-    button {
-        display: block;
-        padding: 2vw;
-        font-size: 3vh;
-        background-color: red;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        align-self: flex-start;
-    }
+.background {
+    background-image: url("images/backgrounds/photo-1495102675274-3ba61637d5bc.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.block1 {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    width: 100%;
+    height: 15vh;
+    border: 1px solid red;
+    background-color: rgb(249, 249, 249);
+}
+
+.block1 .spacer {
+    width: 80vw;
+}
+
+.block1 .navmenu, .logo {
+    margin: 5vh 5vw;
+    font-size: 30px;
+}
+
+.block2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    border: 1px solid blue;
+}
+
+.block2 img {
+    margin: 5vh 6vw 5vh 3vh;
+    width: 33vh;
+    border-radius: 50%;
+}
+
+.block2 .welcome {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    width: 40vw;
+    margin: 5vh 3vw 5vh 6vh;
+    /* border: 1px solid black; */
+}
+
+.block2 .welcome h1 {
+    font-size: 5vh;
+}
+
+.block2 .welcome span {
+    color: 
+}
+
+.block2 .welcome h2 {
+    font-size: 3vh;
+}
+
+.contact {
+    /* background-color:rgb(236, 229, 229); */
+    background-color: black;
+    border-top: 2px solid black;
+    width: 100%;
+    height: 80vh;
+}
+
+.footer {
+    /* background-image: url("background-992850_960_720.png"); */
+    background-color:  rgb(206, 214, 212);
+    width: 100%;
+    height: 20vh;
+    border: 1px solid green;
+}
+
+.subfooter {
+    background-color: rgb(236, 229, 229);
+    height: 5vh;
+}
+
+/* ------------------------------------------------------------ */
+
+a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #000;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  left: -100px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
+/* ------------------------------------------------------------ */
 
 @media screen and (min-width: 640px) {
-    .blocks {
-        display: flex;
-        flex-direction: column;
+    .block2 .welcome {
+        width: 30vw;
+    }
+    
+    .block2 .welcome h1 { 
+        font-size: 6vh;
+
     }
 
-    .text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        /* background-image: url("images/siera.jpg"); */
-        background-color: white;
-        /* background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; */
-        height: 84vh;
-    }
-
-    .text img {
-        width: 400px;
-        margin: 15vw;
+    .block2 img {
+        margin: 5vh 5vw;
+        width: 40vh;
         border-radius: 50%;
-
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        background-color: black;
-        height: 16vh;
-        width: 100vw;
-    }
-
-    .footer img {
-        width: 5vw;
-        margin: 1vw;
-        border-radius: 50%;
-        border: 0.4vw solid white;
-    }
-
-    div h1 {
-        /* background: rgba(168, 136, 136, 0.4); */
-        font-size: 6vw;
-        margin: 1vw 15vw;
-    }
-
-    div h2 {
-        font-size: 4vw;
-        margin: 1vw 15vw;
-        color: blue;
-    }
-
-    nav {
-        width: 100vw;
-        background-color: #000;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        font-size: 3vh;
-        padding: 2vw;
-    }
-
-    li {
-        list-style-type: none;
-    }
-
-    a {
-        display: flex;
-        text-decoration: none;
-        color: white;
-        padding: 2vw;
-    }
-
-    a:hover {
-        background-color: blue;
-    }
-
-    button {
-        display: block;
-        padding: 2vw;
-        font-size: 3vh;
-        background-color: red;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        align-self: flex-start;
     }
 }
