@@ -24,16 +24,16 @@
     position: fixed;
     justify-content: flex-end;
     width: 100vw;
-    height: 60px;
+    height: 15vh;
     border: 1px solid red;
 }
 
 .block1 .spacer {
-    width: 86vw;
+    width: 80vw;
 }
 
 .block1 .navmenu, .logo {
-    margin: 20px 20px;
+    margin: 5vh 5vw;
     font-size: 30px;
 }
 
@@ -48,8 +48,8 @@
 }
 
 .block2 img {
-    margin: 5vh 5vw;
-    width: 35vh;
+    margin: 5vh 6vw 5vh 3vh;
+    width: 33vh;
     border-radius: 50%;
 }
 
@@ -57,12 +57,12 @@
     font-family: 'Lora', serif;
     font-style: normal;
     width: 40vw;
-    margin: 5vh 5vw;
-    border: 1px solid black;
+    margin: 5vh 3vw 5vh 6vh;
+    /* border: 1px solid black; */
 }
 
 .block2 .welcome h1 {
-    font-size: 6vh;
+    font-size: 5vh;
 }
 
 .block2 .welcome span {
@@ -95,8 +95,18 @@
 }
 
 @media screen and (min-width: 640px) {
+    .block2 .welcome {
+        width: 30vw;
+    }
+    
     .block2 .welcome h1 { 
-        font-size: 7vh;
+        font-size: 6vh;
 
+    }
+
+    .block2 img {
+        margin: 5vh 5vw;
+        width: 40vh;
+        border-radius: 50%;
     }
 }
