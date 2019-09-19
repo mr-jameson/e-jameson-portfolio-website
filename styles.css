@@ -21,17 +21,37 @@
 }
 
 .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
     background-color: black;
+    height: 16vh;
+    width: 100vw;
+}
+
+.footer img {
+    width: 5vw;
+    margin: 1vw;
+    border-radius: 50%;
+    border: 0.4vw solid white;
 }
 
 div h1 {
     /* background: rgba(168, 136, 136, 0.4); */
-    margin: 1vw 20vw;
+    font-size: 6vw;
+    margin: 1vw 15vw;
 }
 
+div h2 {
+    font-size: 4vw;
+    margin: 1vw 15vw;
+    color: blue;
+}
 
 nav {
-    /* width: 100vw; */
+    width: 100vw;
     background-color: #000;
 }
 
@@ -40,33 +60,30 @@ ul {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     font-size: 3vh;
     padding: 2vw;
 }
 
 li {
     list-style-type: none;
-    font-size: 3vh;
 }
 
 a {
-    display: block;
+    display: flex;
     text-decoration: none;
     color: white;
     padding: 2vw;
-    font-size: 20px;
 }
 
 a:hover {
-    background-color: rgb(116, 19, 19);
+    background-color: blue;
 }
 
 button {
     display: block;
     padding: 2vw;
     font-size: 3vh;
-    background-color: #AFE0FF;
+    background-color: red;
     border: none;
     outline: none;
     cursor: pointer;
@@ -90,7 +107,7 @@ button {
         display: block;
         padding: 2vw;
         font-size: 3vh;
-        background-color: #AFE0FF;
+        background-color: red;
         border: none;
         outline: none;
         cursor: pointer;
