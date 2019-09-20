@@ -37,8 +37,6 @@ body {
     justify-content: flex-end;
     width: 100%;
     height: 15vh;
-    /* border-top: 3px solid black;
-    border-bottom: 3px solid black; */
     background-color:black;
 }
 
@@ -69,7 +67,6 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    border: 1px solid blue;
 }
 
 .block2-about {
@@ -81,7 +78,6 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
-  border: 1px solid blue;
 }
 
 .block2 img {
@@ -93,11 +89,10 @@ body {
 .block2 .welcome {
     width: 40vw;
     margin: 5vh 3vw 5vh 6vh;
-    /* border: 1px solid black; */
 }
 
 .block2 .welcome h1 {
-    font-size: 4vh;
+    font-size: 3.5vh;
 }
 
 .block2 .welcome h2 {
@@ -125,7 +120,6 @@ body {
   font-size: 3.5vh;
   color: white;
   background-color: rgb(73, 69, 69);
-  border: 1px solid red;
   width: 100%;
 }
 
@@ -134,15 +128,14 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-left: 12vw;
-    margin-right: 13vw;
+    margin: 0 13vw 0 12vw;
 }
 
 .languages ul li {
     width: 30vw;
     height: 5vh;
     margin: 1vh 2vw 1vh 1vw;
-    padding: 1vh 3vw;
+    padding: 2vh 3vw 1vw 3vw;
     list-style: none; 
     white-space: nowrap;
 }
@@ -291,7 +284,7 @@ background: rgb(233, 77, 38);
     }
     
     .block2 .welcome h1 { 
-        font-size: 6vh;
+        font-size: 5.5vh;
 
     }
 
