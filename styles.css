@@ -37,9 +37,9 @@ body {
     justify-content: flex-end;
     width: 100%;
     height: 15vh;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    background-color: rgb(249, 249, 249);
+    /* border-top: 3px solid black;
+    border-bottom: 3px solid black; */
+    background-color:black;
 }
 
 .block1 .spacer {
@@ -49,6 +49,15 @@ body {
 .block1 .navmenu, .logo {
     margin: 5vh 5vw;
     font-size: 30px;
+    color: white;
+}
+
+.block1 .logo a {
+  color: white;
+}
+
+.block1 .logo a:hover {
+  color: rgb(233, 77, 38);
 }
 
 .block2 {
@@ -120,14 +129,14 @@ body {
 .languages ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .languages ul li {
     width: 30vw;
     height: 6vh;
-    margin: 2vh 2vw;
+    margin: 2vh 2vw 2vh 1vw;
     padding: 3vh 3vw;
     list-style: none; 
     white-space: nowrap;
@@ -151,7 +160,7 @@ body {
 a
 {
   text-decoration: none;
-  color: #232323;
+  color: black;
   
   transition: color 0.3s ease;
 }
@@ -198,7 +207,7 @@ a:hover {
   margin-bottom: 5px;
   position: relative;
   
-  background: #000;
+  background: white;
   border-radius: 3px;
   
   z-index: 1;
@@ -210,6 +219,9 @@ a:hover {
               opacity 0.55s ease;
 }
 
+#menuToggle span:hover {
+background: rgb(233, 77, 38);
+}
 
 #menuToggle span:first-child
 {
@@ -272,7 +284,7 @@ a:hover {
 
 /* ------------------------------------------------------------ */
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 720px) {
     .block2 .welcome {
         width: 30vw;
     }
