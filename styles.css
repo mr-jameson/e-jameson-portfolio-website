@@ -80,7 +80,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   border: 1px solid blue;
 }
 
@@ -100,28 +100,31 @@ body {
     font-size: 4vh;
 }
 
-.block2 .welcome span {
-    color: 
-}
-
 .block2 .welcome h2 {
     font-size: 2.5vh;
 }
 
-.block2-about .location {
+.block2 .welcome h1, h2 {
   padding: 20px 20px;
+  margin: 10px 10px;
 }
 
 .block2-about .location {
-    
+  padding: 20px 20px;
+  margin: 20px 20px;
+}
+
+.block2-about .location h1, h2 {
+  padding: 20px 20px;
+  margin: 10px 10px;
 }
 
 .languages {
   font-family: sans-serif;
   font-style: bold;
-  font-size: 4vh;
+  font-size: 3.5vh;
   color: white;
-  background-color: black;
+  background-color: rgb(73, 69, 69);
   border: 1px solid red;
   width: 100%;
 }
@@ -131,31 +134,27 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-left: 12vw;
+    margin-right: 13vw;
 }
 
 .languages ul li {
     width: 30vw;
-    height: 6vh;
-    margin: 2vh 2vw 2vh 1vw;
-    padding: 3vh 3vw;
+    height: 5vh;
+    margin: 1vh 2vw 1vh 1vw;
+    padding: 1vh 3vw;
     list-style: none; 
     white-space: nowrap;
 }
 
 .footer {
-    /* background-image: url("background-992850_960_720.png"); */
-    background-color:  rgb(206, 214, 212);
-    width: 100%;
-    height: 20vh;
-    border: 1px solid green;
+    color: white;
+    background-color:black;
+    height: 40px;
+    font-family: sans-serif;
 }
 
-.subfooter {
-    background-color: rgb(236, 229, 229);
-    height: 5vh;
-}
-
-/* --------------------------------- toggle navbar --------------------------- */
+/* --------------------------------- toggle navbar -------------------------------------- */
 
 a
 {
