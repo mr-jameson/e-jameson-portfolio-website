@@ -161,6 +161,8 @@ a
 {
   text-decoration: none;
   color: black;
+  font-family: 'Lora', serif;
+  font-weight: 600;
   
   transition: color 0.3s ease;
 }
