@@ -291,9 +291,9 @@ a:hover {
   color: rgb(233, 77, 38);
 }
 
-a:visited {
+/* a:visited {
   text-decoration: none;
-}
+} */
 
 #menuToggle
 {
