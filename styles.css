@@ -126,6 +126,10 @@ body {
   font-size: 20px;
   }
 
+  .block2-blog p, .block2-projects p {
+    font-size: 16px;
+    }
+
 .block2 img {
     margin: 5vh 8vw 5vh 2vh;
     width: 23vh;
@@ -424,17 +428,23 @@ background: rgb(233, 77, 38);
       flex-direction: row;
     }
 
-    .block2-blog, .block2-projects {
+    /* .block2-blog, .block2-projects {
       overflow-y: scroll;
-    }
-
-    /* .block2-blog .content img {
-      width; 25vw;
-    }
-
-    .block2-blog .content .post1 {
-      width; 25vw;
     } */
 
+    .block2-blog .content .side, .block2-projects .content .side {
+      display: flex;
+      flex-direction: row;
     }
+
+    .block2-blog .content .side div {
+      width: 30vw;
+    }
+
+    .block2-blog .content .side img {
+      max-width: 35vw;
+    }
+    /* .block2-blog .content .post1 {
+      width; 25vw;
+    } */ 
 }
