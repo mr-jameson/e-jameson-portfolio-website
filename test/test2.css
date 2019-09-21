@@ -1,0 +1,11 @@
+.container {
+    max-height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+.container div {
+    border-bottom: 1px solid rgb(37, 25, 25);
+    height: 100vh;
+	scroll-snap-align: start;
+}
