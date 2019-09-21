@@ -101,7 +101,7 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   max-width: 100%;
-  height: 40vh;
+  height: 42vh;
   margin: 5vh 15vw 5vh 15vw;
   padding: 5vh 5vw;
 }
@@ -408,13 +408,13 @@ background: rgb(233, 77, 38);
       overflow-y: scroll;
     }
 
-    .block2-blog .content img {
+    /* .block2-blog .content img {
       width; 25vw;
     }
 
     .block2-blog .content .post1 {
       width; 25vw;
-    }
+    } */
 
     }
 }
