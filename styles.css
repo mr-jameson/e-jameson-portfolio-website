@@ -177,6 +177,11 @@ body {
   width: 50vw;
 }
 
+.block2-blog .post1 {
+  background-color: rgba(221, 195, 195, 0.6);
+  width: 50vw;
+}
+
 .blocks .heading {
   font-family: 'Lora', serif;
   font-size: 30px;
@@ -393,8 +398,9 @@ background: rgb(233, 77, 38);
       flex-direction: row;
     }
 
-    .block2-blog img {
-      width: 30vw;
+    .block2-blog .content {
+      width: 35vw;
     }
+
     }
 }
