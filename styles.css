@@ -296,6 +296,11 @@ a:visited {
   color: black;
 }
 
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
 #menuToggle
 {
   display: block;
