@@ -102,7 +102,7 @@ body {
   align-items: flex-start;
   max-width: 100%;
   height: 40vh;
-  margin: 5vh 15vw 15vh 15vw;
+  margin: 5vh 15vw 5vh 15vw;
   padding: 5vh 5vw;
 }
 
@@ -173,13 +173,19 @@ body {
   margin: 20px 20px 20px 60px;
 }
 
+.block2-blog .content {
+  display: flex;
+  flex-direction: column;
+}
+
 .block2-blog img {
-  width: 50vw;
+  width: 54vw;
 }
 
 .block2-blog .post1 {
   background-color: rgba(221, 195, 195, 0.6);
   width: 50vw;
+  padding: 2vw 2vw;
 }
 
 .blocks .heading {
@@ -398,8 +404,16 @@ background: rgb(233, 77, 38);
       flex-direction: row;
     }
 
-    .block2-blog .content {
-      width: 35vw;
+    .block2-blog {
+      overflow-y: scroll;
+    }
+
+    .block2-blog .content img {
+      width; 25vw;
+    }
+
+    .block2-blog .content .post1 {
+      width; 25vw;
     }
 
     }
