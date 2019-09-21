@@ -36,6 +36,17 @@ body {
   background-position: center;
 }
 
+.background-projects {
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/backgrounds/background-5.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 .blocks {
     display: flex;
     flex-direction: column;
@@ -93,7 +104,7 @@ body {
   height: 100vh;
 }
 
-.block2-blog {
+.block2-blog, .block2-projects {
   font-family: 'Lora', serif;
   font-style: normal;
   display: flex;
@@ -173,12 +184,12 @@ body {
   margin: 20px 20px 20px 60px;
 }
 
-.block2-blog .content {
+.block2-blog .content, .block2-projects .content {
   display: flex;
   flex-direction: column;
 }
 
-.block2-blog img {
+.block2-blog img, .block2-projects img {
   width: 54vw;
 }
 
@@ -404,7 +415,7 @@ background: rgb(233, 77, 38);
       flex-direction: row;
     }
 
-    .block2-blog {
+    .block2-blog, .block2-projects {
       overflow-y: scroll;
     }
 
