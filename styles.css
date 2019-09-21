@@ -291,9 +291,10 @@ a:hover {
   color: rgb(233, 77, 38);
 }
 
-/* a:visited {
+a:visited {
   text-decoration: none;
-} */
+  color: black;
+}
 
 #menuToggle
 {
@@ -433,10 +434,6 @@ background: rgb(233, 77, 38);
       flex-direction: row;
     }
 
-    /* .block2-blog, .block2-projects {
-      overflow-y: scroll;
-    } */
-
     .block2-blog .content .side, .block2-projects .content .side {
       display: flex;
       flex-direction: row;
@@ -449,9 +446,7 @@ background: rgb(233, 77, 38);
     .block2-blog .content .side img {
       max-width: 35vw;
     }
-    /* .block2-blog .content .post1 {
-      width; 25vw;
-    } */ 
+
     .block2-blog p, .block2-projects p {
       font-size: 17px;
       }
