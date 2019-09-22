@@ -87,7 +87,7 @@ body {
 
 .block2 {
     scroll-snap-align: start;
-    font-family: 'Lora', serif;
+    font-family: sans-serif, arial;
     font-style: normal;
     display: flex;
     flex-direction: row;
@@ -99,7 +99,7 @@ body {
 
 .block2-about {
   scroll-snap-align: start;
-  font-family: 'Lora', serif;
+  font-family: sans-serif, arial;
   font-style: normal;
   display: flex;
   flex-direction: row;
@@ -110,7 +110,7 @@ body {
 }
 
 .block2-blog, .block2-projects {
-  font-family: 'Lora', serif;
+  font-family: sans-serif, arial;
   font-style: normal;
   /* display: flex;
   flex-direction: column;
@@ -168,7 +168,7 @@ body {
   display: flex;  
   justify-content: left;
   align-items: center;
-  font-family: 'Lora', serif;
+  font-family: sans-serif, arial;
   height: 90vh;
   background-image: url("images/backgrounds/bridge2.jpg");
   background-repeat: no-repeat;
@@ -185,7 +185,7 @@ body {
   display: flex;  
   justify-content: left;
   align-items: center;
-  font-family: 'Lora', serif;
+  font-family: sans-serif, arial;
   height: 90vh;
   background-image: url("images/backgrounds/kitesurf2.jpg");
   background-repeat: no-repeat;
@@ -213,7 +213,7 @@ body {
 }
 
 .blocks .heading {
-  font-family: 'Lora', serif;
+  font-family: sans-serif, arial;
   font-size: 30px;
   font-weight: bold;
   margin-top: 25vh;
@@ -221,7 +221,7 @@ body {
 }
 
 .languages {
-  font-family: sans-serif;
+  font-family: sans-serif, arial;
   font-style: bold;
   font-size: 3.5vh;
   color: white;
@@ -252,7 +252,7 @@ body {
     color: white;
     background-color:black;
     height: 60px;
-    font-family: sans-serif;
+    font-family: sans-serif, arial;
 }
 
 .footer #copyright {
@@ -281,7 +281,7 @@ a
 {
   text-decoration: none;
   color: black;
-  font-family: 'Lora', serif;
+  font-family: sans-serif, arial;
   font-weight: 600;
   
   transition: color 0.3s ease;
