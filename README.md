@@ -18,14 +18,15 @@ The navbar is an important feature of the site as it keeps the page clean and si
 ####Footer with links to email and social media
 The footer is present on each page, and contains links to email and other social media pages. These links open as a new tab in the browser.
 
+###Accessibility
+Accessibility is important. Images referenced in the html pages have alt attributes with detailed descriptions to aid visually impaired users. Anchor links are titled with a description of where the link goes. Semantic html tags are used where possible to convey meaning to the content.
+
 ###Site Map
 Refer to site map diagram in github repo:
 https://github.com/mr-jameson/e-jameson-portfolio-website/blob/master/site-flow-chart.jpg
 
-Description of your portfolio website, including,
-Purpose
-Functionality / features
-Sitemap
-Screenshots
-Target audience
-Tech stack (e.g. html, css, deployment platform, etc)
+###Target Audience
+The target audience for this website is an employer or business looking to engage a dev and/or IT professional. The user is expected to have technical knowledge relating to software programming languages. the following knowledge and expectations.
+
+###Tech stack
+CSS and HTML5 are used in the development of this website. It is deployed using the netlify domain.
