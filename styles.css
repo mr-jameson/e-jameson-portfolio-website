@@ -58,6 +58,10 @@ body {
   background-position: center;
 }
 
+.background-blog .blocks {
+  overflow-y: scroll;
+}
+
 .blocks {
     display: flex;
     flex-direction: column;
@@ -140,6 +144,10 @@ body {
 .block2-blog h2, .block2-projects h2 {
   font-size: 20px;
   }
+
+  .block2-blog h3 {
+    font-size: 14px;
+    }
 
   .block2-blog p, .block2-projects p {
     font-size: 14px;
