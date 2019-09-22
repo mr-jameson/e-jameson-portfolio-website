@@ -180,11 +180,6 @@ body {
   margin: 20px 15vw 20px 15vw;
 }
 
-/* .block2-about .location h1, h2 {
-  padding: 20px 20px;
-  margin: 10px 10px;
-} */
-
 .block3-about {
   scroll-snap-align: start;
   display: flex;  
@@ -314,8 +309,18 @@ a
   transition: color 0.3s ease;
 }
 
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 a:hover {
   color: rgb(233, 77, 38);
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
 }
 
 #menuToggle
